@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@winnerkawear</title>
+  <link rel="icon" type="image/png" href="profile.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ตัวควบคุมเสียง (มุมซ้ายบน) -->
+  <div class="music-player" id="musicBox">
+    <button class="vol-btn" id="volBtn" aria-label="Toggle volume">
+      <i class="fa-solid fa-volume-high"></i>
+    </button>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+
+ 
+  <audio id="bg-music" loop preload="auto" playsinline>
+   
+    <source src="Michi3 .mp3" type="audio/mpeg">
+  </audio>
+
+  <video class="bg-video"
+    src="https://v1.pinimg.com/videos/mc/720p/2d/1c/6f/2d1c6fce0d7042983556e94cad2e3f62.mp4"
+    autoplay muted loop playsinline preload="auto"></video>
+  <div class="overlay"></div>
+
+  <main class="wrap">
+    <div class="name-row">
+      <i class="fa-solid fa-user name-icon"></i>
+      <span id="typewriter-name" class="typewriter big"></span>
+    </div>
+
+    <p id="greet" class="subtitle"></p>
+    <p id="edu" class="subtitle"></p>
+
+    <div class="links">
+      <a class="instagram" href="https://www.instagram.com/wxs1n_/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+      <a href="https://discord.com/users/924229772366737408" target="_blank" rel="noopener">
+        <i class="fa-brands fa-discord"></i> Discord
+      </a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
